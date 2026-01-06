@@ -1,12 +1,9 @@
 let score = 0
-let time = 10
-let timer = null
 let record = localStorage.getItem("record") || 0
 
 const btn = document.getElementById("btn")
 const restartBtn = document.getElementById("restart")
 const scoreText = document.getElementById("score")
-const timeText = document.getElementById("time")
 const recordText = document.getElementById("record")
 const clickSound = document.getElementById("clickSound")
 
@@ -33,11 +30,7 @@ function startGame() {
   }, 1000)
 }
 
-function endGame() {
-  clearInterval(timer)
-  btn.disabled = true
-  restartBtn.disabled = false
-  btn.textContent = "FIM DE JOGO"
+
 
   if (score > record) {
     record = score

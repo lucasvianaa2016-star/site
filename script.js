@@ -10,9 +10,7 @@ const clickSound = document.getElementById("clickSound")
 recordText.textContent = record
 
 btn.addEventListener("click", () => {
-  if (time === 10) startGame()
-
-  if (time > 0) {
+ {
     score++
     scoreText.textContent = score
     if (clickSound) clickSound.play()

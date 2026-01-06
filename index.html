@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu site</title>
+  <title>Jogo do Clique</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Site estilizado 😎</h1>
+
+  <div class="box">
+    <h1>Jogo do Clique</h1>
+    <p>Clique o máximo que conseguir em <strong>10 segundos</strong></p>
+
+    <button id="btn">CLICAR</button>
+    <button id="restart" disabled>REINICIAR</button>
+
+    <p>Pontos: <span id="score">0</span></p>
+    <p>Recorde: <span id="record">0</span></p>
+    <p>Tempo: <span id="time">10</span>s</p>
+  </div>
+
+  <audio id="clickSound" src="click.mp3"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
